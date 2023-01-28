@@ -392,7 +392,7 @@ window.addEventListener('DOMContentLoaded', function () {
               startValue += 2;
               if (startValue >= endValue) {
                 entry.target.textContent = endValue;
-                clearTimeout(timer);
+                clearInterval(timer);
               } else entry.target.textContent = startValue;
             }, duration);
             observer.unobserve(entry.target);
